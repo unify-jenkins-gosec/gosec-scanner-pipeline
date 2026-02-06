@@ -49,4 +49,5 @@ pipeline {
     //         archiveArtifacts artifacts: 'gosec-results.sarif', fingerprint: true
     //     }
     // }
+    }
 }
