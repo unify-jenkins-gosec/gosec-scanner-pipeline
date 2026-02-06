@@ -32,7 +32,6 @@ pipeline {
                 '''
             }
         }
-        stage('Security Scan') {
             steps {
                 registerSecurityScan(
                     // Security Scan to include
@@ -41,7 +40,6 @@ pipeline {
                     archive: true
                 )
             }
-        }
     }
 
     // post {
