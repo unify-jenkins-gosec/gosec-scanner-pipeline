@@ -33,6 +33,16 @@ pipeline {
             }
         }
     }
+    stage('Security Scan') {
+            steps {
+                registerSecurityScan(
+                    // Security Scan to include
+                    artifacts: "gosec-results.sarif",
+                    format: "sarif",
+                    archive: true
+                )
+            }
+        }
 
     post {
         always {
