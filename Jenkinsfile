@@ -44,9 +44,9 @@ pipeline {
             }
         }
 
-    post {
-        always {
-            archiveArtifacts artifacts: 'gosec-results.sarif', fingerprint: true
-        }
-    }
+    // post {
+    //     always {
+    //         archiveArtifacts artifacts: 'gosec-results.sarif', fingerprint: true
+    //     }
+    // }
 }
