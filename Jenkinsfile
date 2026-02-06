@@ -33,6 +33,7 @@ pipeline {
             }
         }
     }
+     
     stage('Security Scan') {
             steps {
                 registerSecurityScan(
