@@ -6,7 +6,7 @@ pipeline {
     }
 
     stages {
-        // stage('Security Scan') {
+        stage('GoSec Security Scan') {
             steps {
                 echo 'Running gosec security scan...'
                 sh '''
